@@ -850,7 +850,7 @@ def commission_rate(self, symbol: str, **kwargs):
     return self.sign_request("GET", url_path, params)
 
 
-def download_transactions_asyn(self, startTime: int, endTime: int, **kwargs):
+def download_transactions_async(self, startTime: int, endTime: int, **kwargs):
     """
     |
     | **Get Download Id For Futures Transaction History (USER_DATA)**
@@ -872,7 +872,7 @@ def download_transactions_asyn(self, startTime: int, endTime: int, **kwargs):
     return self.sign_request("GET", url_path, params)
 
 
-def aysnc_download_info(self, downloadId: str, **kwargs):
+def async_download_info(self, downloadId: str, **kwargs):
     """
     |
     | **Get Futures Transaction History Download Link by Id (USER_DATA)**
